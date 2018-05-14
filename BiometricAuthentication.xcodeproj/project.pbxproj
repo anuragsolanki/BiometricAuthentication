@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3BAF2F292036F29000B8022F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF2F282036F29000B8022F /* AppDelegate.swift */; };
-		3BAF2F2B2036F29100B8022F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF2F2A2036F29100B8022F /* ViewController.swift */; };
+		3BAF2F2B2036F29100B8022F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF2F2A2036F29100B8022F /* LoginVC.swift */; };
 		3BAF2F2E2036F29100B8022F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAF2F2C2036F29100B8022F /* Main.storyboard */; };
 		3BAF2F302036F29100B8022F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAF2F2F2036F29100B8022F /* Assets.xcassets */; };
 		3BAF2F332036F29100B8022F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAF2F312036F29100B8022F /* LaunchScreen.storyboard */; };
+		3BAF2F3B2036F36000B8022F /* LoggedInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF2F3A2036F36000B8022F /* LoggedInVC.swift */; };
+		3BAF2F3D2036F52200B8022F /* BiometricAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF2F3C2036F52200B8022F /* BiometricAuthentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BAF2F252036F29000B8022F /* BiometricAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAF2F282036F29000B8022F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BAF2F2A2036F29100B8022F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BAF2F2A2036F29100B8022F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3BAF2F2D2036F29100B8022F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BAF2F2F2036F29100B8022F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BAF2F322036F29100B8022F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BAF2F342036F29100B8022F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BAF2F3A2036F36000B8022F /* LoggedInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInVC.swift; sourceTree = "<group>"; };
+		3BAF2F3C2036F52200B8022F /* BiometricAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				3BAF2F282036F29000B8022F /* AppDelegate.swift */,
-				3BAF2F2A2036F29100B8022F /* ViewController.swift */,
+				3BAF2F2A2036F29100B8022F /* LoginVC.swift */,
 				3BAF2F2C2036F29100B8022F /* Main.storyboard */,
+				3BAF2F3A2036F36000B8022F /* LoggedInVC.swift */,
 				3BAF2F2F2036F29100B8022F /* Assets.xcassets */,
 				3BAF2F312036F29100B8022F /* LaunchScreen.storyboard */,
 				3BAF2F342036F29100B8022F /* Info.plist */,
+				3BAF2F3C2036F52200B8022F /* BiometricAuthentication.swift */,
 			);
 			path = BiometricAuthentication;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BAF2F2B2036F29100B8022F /* ViewController.swift in Sources */,
+				3BAF2F3B2036F36000B8022F /* LoggedInVC.swift in Sources */,
+				3BAF2F2B2036F29100B8022F /* LoginVC.swift in Sources */,
+				3BAF2F3D2036F52200B8022F /* BiometricAuthentication.swift in Sources */,
 				3BAF2F292036F29000B8022F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BiometricAuthentication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -294,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BiometricAuthentication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
